@@ -235,6 +235,7 @@ describe('App', () => {
       });
 
     let foundProduct = await productsRepository.findOne(product.body.id);
+    console.log('foundProject =', foundProduct);
 
     expect(foundProduct).toEqual(
       expect.objectContaining({
